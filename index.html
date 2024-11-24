@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Finance Tracker</h1>
+        <div class="input-section">
+            <input type="text" placeholder="Add description" id="description">
+            <input type="number" placeholder="Enter amount" id="amount">
+            <button onclick="addTransaction('Income')">Add Income</button>
+            <button onclick="addTransaction('Expense')">Add Expense</button>
+        </div>
+
+        <table id="transactions-table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody id="transactions-body"></tbody>
+            <tfoot>
+                <tr>
+                    <th>Remaining Amount</th>
+                    <th id="remain-amount">0</th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
